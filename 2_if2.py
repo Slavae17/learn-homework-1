@@ -14,13 +14,26 @@
   и выводя на экран результаты
 
 """
+stroka1 = input()
+stroka2 = input()
 
-def main():
+def main(stroka1, stroka2):
     """
     Эта функция вызывается автоматически при запуске скрипта в консоли
     В ней надо заменить pass на ваш код
     """
-    pass
     
+    if stroka1 == stroka2:
+        return "1"
+    elif stroka1 != stroka2 and len(stroka1) > len (stroka2):
+        return "2"
+    elif stroka1 != stroka2 and stroka2 == 'learn':
+        return "3"
+    else:
+        return "0"
+
+
 if __name__ == "__main__":
-    main()
+    print(main(stroka1, stroka2))
+
+
